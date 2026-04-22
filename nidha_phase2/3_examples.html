@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model Examples</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .box {
+            width: 200px;
+            border: 3px solid black;
+            background-color: lightblue;
+        }
+
+        /* Example 1: More Padding */
+        .padding-box {
+            padding: 40px;
+            margin: 20px;
+        }
+
+        /* Example 2: More Margin */
+        .margin-box {
+            padding: 10px;
+            margin: 60px;
+        }
+
+        /* Example 3: Equal */
+        .equal-box {
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Margin vs Padding Examples</h1>
+
+<div class="container">
+
+    <div class="box padding-box">
+        Example 1<br>
+        More Padding
+    </div>
+
+    <div class="box margin-box">
+        Example 2<br>
+        More Margin
+    </div>
+
+    <div class="box equal-box">
+        Example 3<br>
+        Equal Spacing
+    </div>
+
+</div>
+
+</body>
+</html>

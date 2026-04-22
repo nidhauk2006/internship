@@ -1,0 +1,165 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* =========================
+   NAVBAR (ALL PAGES)
+========================= */
+.navbar {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+/* =========================
+   INDEX PAGE (HOME)
+========================= */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+.container {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.profile {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.profile:hover {
+    filter: brightness(1.1);
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+.contact-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.contact-container h1 {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: darkblue;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    color: white;
+    margin-top: 30px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container,
+    .contact-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}

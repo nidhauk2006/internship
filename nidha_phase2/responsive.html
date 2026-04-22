@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Design</title>
+
+    <!-- Viewport (very important) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Layout container */
+        .container {
+            display: flex;
+        }
+
+        /* Boxes */
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: lightblue;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* 📱 MOBILE (small screens) */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                background-color: lightgreen;
+            }
+        }
+
+        /* 📱 TABLET */
+        @media (min-width: 601px) and (max-width: 900px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .box {
+                background-color: lightcoral;
+            }
+        }
+
+        /* 💻 DESKTOP */
+        @media (min-width: 901px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .box {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    Responsive Website
+</div>
+
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Properties Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 25px;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    .box {
+      padding: 10px;
+      margin: 10px;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1> Display Property examples</h1>
+
+  <h3>1. Block</h3>
+  <div class="box" style="display: block; background: lightskyblue;">
+    Block Element 1
+  </div>
+  <div class="box" style="display: block; background: rgb(193, 193, 27);">
+    Block Element 2
+  </div>
+
+  <h3>2. Inline</h3>
+  <span class="box" style="display: inline; background: rosybrown;">
+    Inline 1
+  </span>
+  <span class="box" style="display: inline; background: rosybrown;">
+    Inline 2
+  </span>
+
+  <h3>3. Inline-Block</h3>
+  <div class="box" style="display: inline-block; width: 100px; height: 50px; background: rgb(211, 81, 58);">
+    Box 1
+  </div>
+  <div class="box" style="display: inline-block; width: 100px; height: 50px; background: rgb(33, 108, 108);">
+    Box 2
+  </div>
+  <h3>4. None</h3>
+  <div class="box" style="display: none;">
+    You won't see this
+  </div>
+
+  <h3>5. Flex</h3>
+  <div style="display: flex; gap: 10px; background: #eee; padding: 10px;">
+    <div class="box" style="background: lightskyblue;">Flex 1</div>
+    <div class="box" style="background: lightsalmon;">Flex 2</div>
+    <div class="box" style="background: lightslategray;">Flex 3</div>
+  </div>
+
+  <h3>6. Grid</h3>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+    <div class="box" style="background: lightcoral;">Grid 1</div>
+    <div class="box" style="background: lightslategrey;">Grid 2</div>
+    <div class="box" style="background: lightgreen">Grid 3</div>
+  </div>
+
+</body>

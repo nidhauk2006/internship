@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Example</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex; /* enables flexbox */
+            flex-direction: row; /* items in a row */
+            justify-content: space-around; /* space between items */
+            align-items: center; /* align vertically */
+            height: 200px;
+            background-color: lightgreen;
+            margin: 20px;
+        }
+
+        .box {
+            background-color: darkgreen;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Flexbox Layout</h1>
+
+<div class="container">
+    <div class="box">Item 1</div>
+    <div class="box">Item 2</div>
+    <div class="box">Item 3</div>
+</div>
+
+</body>
+</html>
