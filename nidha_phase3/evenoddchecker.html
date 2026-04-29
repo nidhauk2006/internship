@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Odd Checker</title>
+</head>
+<body>
+
+<h1>Even or Odd Checker</h1>
+
+<input type="number" id="numberInput" placeholder="Enter a number">
+<button onclick="checkEvenOdd()">Check</button>
+
+<p id="result"></p>
+
+<script>
+    function checkEvenOdd() {
+        let num = document.getElementById("numberInput").value;
+
+        // Convert to number (important)
+        num = Number(num);
+
+        if (num % 2 === 0) {
+            document.getElementById("result").innerText = "Even Number";
+        } else {
+            document.getElementById("result").innerText = "Odd Number";
+        }
+    }
+</script>
+
+</body>
+</html>
