@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toggle Button</title>
+</head>
+<body>
+
+<h2>Toggle Button</h2>
+
+<button id="toggleBtn">OFF</button>
+
+<script>
+let btn = document.getElementById("toggleBtn");
+
+let state = false;
+
+btn.addEventListener("click", function() {
+    if (state == false) {
+        btn.innerText = "ON";
+        btn.style.backgroundColor = "green";
+        state = true;
+    } else {
+        btn.innerText = "OFF";
+        btn.style.backgroundColor = "red";
+        state = false;
+    }
+});
+</script>
+
+</body>
+</html>

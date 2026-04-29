@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling</title>
+</head>
+<body>
+
+<h1 id="heading">Event Handling Example</h1>
+
+<!-- 1. Button Click -->
+<button id="btn">Click Me</button>
+
+<hr>
+
+<!-- 2. Input Live Preview -->
+<h3>Live Preview</h3>
+<input type="text" id="inputBox" placeholder="Type something...">
+<p id="preview"></p>
+
+<hr>
+
+<!-- 3. Form Validation -->
+<h3>Form</h3>
+<form id="myForm">
+    <input type="text" id="username" placeholder="Enter username">
+    <button type="submit">Submit</button>
+</form>
+
+<p id="error" style="color:green;"></p>
+
+<script>
+    // 1. Button click → change text
+    let button = document.getElementById("btn");
+    let heading = document.getElementById("heading");
+
+    button.addEventListener("click", function() {
+        heading.innerText = "Button Clicked!";
+    });
+
+
+    // 2. Input typing → live preview
+    let input = document.getElementById("inputBox");
+    let preview = document.getElementById("preview");
+
+    input.addEventListener("input", function() {
+        preview.innerText = input.value;
+    });
+
+
+    // 3. Form submit → prevent default + validate
+    let form = document.getElementById("myForm");
+    let error = document.getElementById("error");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // stop page reload
+
+        let username = document.getElementById("username").value;
+
+        if (username === "") {
+            error.innerText = "Username cannot be empty!";
+        } else {
+            error.innerText = "Form submitted successfully!";
+        }
+    });
+</script>
+
+</body>
+</html>

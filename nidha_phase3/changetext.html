@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Text Change</title>
+</head>
+<body>
+
+<h1 id="title">Hello World</h1>
+
+<button onclick="changeText()">Change Text</button>
+
+<script>
+    function changeText() {
+        // Selecting element using getElementById
+        let heading = document.getElementById("title");
+
+        // Changing text content
+        heading.innerText = "Text Changed using DOM!";
+    }
+</script>
+
+</body>
+</html>

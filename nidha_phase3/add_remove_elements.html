@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Elements</title>
+</head>
+<body>
+
+<ul id="list">
+    <li class="item">Item 1</li>
+    <li class="item">Item 2</li>
+</ul>
+
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Item</button>
+
+<script>
+    function addItem() {
+        let list = document.getElementById("list");
+
+        // Create new element
+        let li = document.createElement("li");
+        li.innerText = "New Item";
+
+        // Add to list
+        list.appendChild(li);
+    }
+
+    function removeItem() {
+        // Selecting using getElementsByClassName
+        let items = document.getElementsByClassName("item");
+
+        if (items.length > 0) {
+            items[0].remove(); // remove first item
+        }
+    }
+</script>
+
+</body>
+</html>
